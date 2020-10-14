@@ -1,0 +1,43 @@
+// Table Styling
+
+.table{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    td{
+	font-size: 13px;
+    }
+    th{
+	padding: 12px 15px;;
+    }
+    th,
+    td {
+	vertical-align: middle;
+	min-height: 45px;
+    }
+    td .btn{
+	margin-top: 2px;
+	margin-bottom: 2px;
+    }
+    .btn + .btn{
+	margin-left: 4px;
+    }
+}
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #f6f6f6;
+}
+.dataTables_info{
+    font-size: 12px;
+}
+.table-striped tbody{
+    tr.past:nth-of-type(odd) {
+	background-color: #eeeeee;
+    }
+    tr.past:nth-of-type(even) {
+	background-color: #f6f6f6;
+    }
+    tr.past:not(:hover){
+	td{
+	    opacity: .4;
+	}
+    }
+}

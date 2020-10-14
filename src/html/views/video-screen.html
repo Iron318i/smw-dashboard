@@ -1,0 +1,191 @@
+<% var data = {
+title: "Virtual Consultations | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Virtual Consultations</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">Consultation Parameters</h2>
+            </div>
+            <div class="card-body">
+		<div class="row video-screen equal">
+		    <div class="col-md-6 col-xl-3">
+			<p class="font-weight-bold fsz-15">Patient Information:</p>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-address-card"></i></span>
+			    <strong>ID:</strong>
+			    <span>13486</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-user"></i></span>
+			    <strong>Name:</strong>
+			    <span>Melissa Garcia</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="17px"><use xlink:href="./assets/img/sprite.svg#gender"></use></svg>
+			    </span>
+			    <strong>Gender:</strong>
+			    <span>Female</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="far fa-calendar-alt"></i></span>
+			    <strong>Date of birth:</strong>
+			    <span>03/02/1990</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+			    <strong>Email:</strong>
+			    <span>melzep3@gmail.com</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+			    <strong>Phone:</strong>
+			    <span>2103624510</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="19px"><use xlink:href="./assets/img/sprite.svg#healthcare"></use></svg>
+			    </span>
+			    <strong>Diagnosed:</strong>
+			    <span>Yes</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#medical-guard"></use></svg>
+			    </span>
+			    <strong>Medical Insurance Plan:</strong>
+			    <span>Private insurance plan</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="13px"><use xlink:href="./assets/img/sprite.svg#tooth"></use></svg>
+			    </span>
+			    <strong>Issues and Concerns:</strong>
+			    <span>Lorem Ipsum Dolorsitamet</span>
+			</div>
+			<div class="">
+			    <hr class="my-4">
+			</div>
+			<p class="font-weight-bold fsz-15">Consulatation Details:</p>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="far fa-calendar-check"></i></span>
+			    <strong>Date:</strong>
+			    <span>Wednesday, May 20, 2020</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-clock"></i></span>
+			    <strong>Duration:</strong>
+			    <span>5:20 pm - 6:20 Pm</span>
+			</div>
+			<div class="">
+			    <hr class="my-4">
+			</div>
+			<p class="font-weight-bold fsz-15">Patient Notes:</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiselit. Integer in volutpat velit. Phasellus est magna, porttitor vel neque id, lobortis finibus dolor. Sed bibendum vestibulum diam volutpat dictum. Aliqu hendrerit ex id risus mollis, quis pellentesque velit dapibus. Sed ante nisl, posuere id justo in, sollic imperdiet libero. </p>
+		    </div>
+		    <div class="col-md-6 col-xl-6">
+			<div class="row justify-content-between mb-1">
+			    <div class="col-auto">
+				<p><strong class="fsz-15 mr-2">Duration:</strong><span class="fsz-19">0:30</span></p>
+			    </div>
+			    <div class="col-auto">
+				<span class="fsz-19">5:30 pm</span>
+			    </div>
+			</div>
+			<div class="video-wrp mb-3">
+			    <img class="img-fluid" src="./assets/img/video-screen.jpg" alt="video-screen.jpg">
+			</div>
+			<div class="form-row mb-3">
+			    <div class="col-md-6">
+				<button class="btn btn-block btn-success mb-2">START CONSULTATION</button>
+			    </div>
+			    <div class="col-md-6">
+				<button class="btn btn-block btn-danger mb-2">STOP CONSULTATION</button>
+			    </div>
+			</div>
+			<div class="messages">
+			    <div class="msg-history">
+				<div class="mb-3">
+				    <a href="#" class="load-messages">Load older messages<i class="fas fa-caret-up ml-3"></i></a>
+				</div>
+				<div class="incoming msg">
+				    <div class="avatar"> 
+					<img src="./assets/img/msg-avatar.png" alt="sunil">
+				    </div>
+				    <div class="received-msg">
+					<span class="time-date">3 hours ago</span>
+					<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Supendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula...Lorem ipsum dolor sit amet enim. </p>
+				    </div>
+				</div>
+				<div class="incoming msg">
+				    <div class="avatar"> 
+					<img src="./assets/img/msg-avatar.png" alt="sunil">
+				    </div>
+				    <div class="received-msg">
+					<span class="time-date">3 hours ago</span>
+					<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Supendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula...Lorem ipsum dolor sit amet enim. </p>
+				    </div>
+				</div>
+				<div class="outgoing msg">
+				    <div class="sent-msg">
+					<span class="time-date">3 hours ago</span>
+					<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Supendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. </p>
+				    </div>
+				    <div class="avatar"> 
+					<img src="./assets/img/msg-avatar-2.png" alt="sunil">
+				    </div>
+				</div>
+			    </div>
+			    <div class="mt-3">
+				<div class="form-group">
+				    <input type="text" class="form-control" placeholder="Type Your message here">
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col-12 col-xl-3 notes">
+			<p class="font-weight-bold fsz-15">Notes:</p>
+			<div class="form-group">
+			    <textarea rows="20" class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Integer in volutpat velit. Phasellus est magna, 
+porttitor vel neque id, lobortis finibus dolor. 
+Sed bibendum vestibulum diam volutpat dictum. 
+
+Aliquam hendrerit ex id risus mollis
+
+quis pellentesque velit dapibus. Sed ante nisl, posuere id justo in, sollicitudin imperdiet libero. Praesent scelerisque diam nisl, volutpat pellentesque quam tincidunt a. 
+
+
+Nulla hendrerit vitae neque id volutpat. Quisque non nisi vitae orci consectetur finibus. Ut sed congue leo, ac gravida tellus. Donec id tincidunt libero. Ut vulputate dictum convallis. Duis eget feugiat ipsum, ac lacinia velit. Etiam risus dolor, maximus a mi eget, rutrum volutpat metus.
+
+Quisque vulputate et nunc id aliquet. 
+
+Nunc imperdiet mauris sit amet porta condimentum. Donec leo dui, tempus eget consectetur at, dictum eu lectus. Donec aliquet maximus nibh, viverra pretium augue eleifend vitae. Cras placerat auctor placerat. Nullam efficitur erat vitae libero sodales feugiat. Donec ipsum mauris, consequat a convallis sed, tristique quis augue. Nam purus turpis, faucibus nec sem nec, placerat placerat sem. Curabitur neque odio, ornare nec fermentum eget, commodo vitae eros. Etiam at fringilla ligula. Vestibulum sit amet orci nisl. Suspendisse molestie est accumsan augue viverra, vitae consequat ex tempus. In non mauris ut elit aliquet pretium in malesuada urna. Duis eget suscipit libero. Nullam dictum felis sollicitudin purus gravida congue. Sed nunc lorem, ullamcorper sed leo at, eleifend mattis mauris.</textarea>
+			</div>
+			<div class="text-right">
+			    <button type="button" class="btn btn-warning btn-lg">SUBMIT</button>
+			</div>
+		    </div>
+		</div>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

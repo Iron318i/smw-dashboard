@@ -1,0 +1,406 @@
+<% var data = {
+title: "Forms | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h3 mb-4">Forms</h1>
+
+	<div class="row">
+	    <div class="col-md-3">
+		<div class="card mb-4">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Form controls</h6>
+		    </div>
+		    <div class="card-body">
+			<form>
+			    <div class="form-group">
+				<label for="exampleFormControlInput1">Email address</label>
+				<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+			    </div>
+			    <div class="form-group">
+				<label for="exampleFormControlSelect1">Example select</label>
+				<select class="form-control" id="exampleFormControlSelect1">
+				    <option>1</option>
+				    <option>2</option>
+				    <option>3</option>
+				    <option>4</option>
+				    <option>5</option>
+				</select>
+			    </div>
+			    <div class="form-group">
+				<label for="exampleFormControlSelect2">Example multiple select</label>
+				<select multiple class="form-control" id="exampleFormControlSelect2">
+				    <option>1</option>
+				    <option>2</option>
+				    <option>3</option>
+				    <option>4</option>
+				    <option>5</option>
+				</select>
+			    </div>
+			    <div class="form-group">
+				<label for="exampleFormControlTextarea1">Example textarea</label>
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			    </div>
+			</form>
+		    </div>
+		</div>
+	    </div>
+	    <div class="col-md-3">
+		<div class="card mb-5">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Sizing</h6>
+		    </div>
+		    <div class="card-body">
+			<div class="form-group">
+			    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
+			</div>
+			<div class="form-group">
+			    <input class="form-control" type="text" placeholder="Default input">
+			</div>
+			<div class="form-group">
+			    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+			</div>
+			<div class="form-group">
+			    <select class="form-control form-control-lg">
+				<option>Large select</option>
+			    </select>
+			</div>
+			<div class="form-group">
+			    <select class="form-control">
+				<option>Default select</option>
+			    </select>
+			</div>
+			<div class="form-group">
+			    <select class="form-control form-control-sm">
+				<option>Small select</option>
+			    </select>
+			</div>
+		    </div>
+		</div>
+            </div>
+	    <div class="col-md-3">
+		<div class="card mb-5">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Input group</h6>
+		    </div>
+		    <div class="card-body">
+			<div class="input-group input-group-sm mb-3">
+			    <div class="input-group-prepend">
+				<button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+			    </div>
+			    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+			</div>
+			<div class="input-group mb-3">
+			    <div class="input-group-prepend">
+				<button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+			    </div>
+			    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+			</div>
+			<div class="input-group input-group-lg mb-3">
+			    <div class="input-group-prepend">
+				<button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+			    </div>
+			    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+			</div>
+
+			<div class="input-group mb-3">
+			    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+			    <div class="input-group-append">
+				<button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+			    </div>
+			</div>
+
+			<div class="input-group mb-3">
+			    <div class="input-group-prepend" id="button-addon3">
+				<button class="btn btn-outline-secondary" type="button">Button</button>
+				<button class="btn btn-outline-secondary" type="button">Button</button>
+			    </div>
+			    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" aria-describedby="button-addon3">
+			</div>
+
+			<div class="input-group">
+			    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+			    <div class="input-group-append" id="button-addon4">
+				<button class="btn btn-outline-secondary" type="button">Button</button>
+				<button class="btn btn-outline-secondary" type="button">Button</button>
+			    </div>
+			</div>
+			<div class="row mt-3">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-stopwatch"></i>
+				</span>
+				<strong>Choose Duration: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Choose the duration of the report. The report will show the leads received between the selected dates."></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <select name="duration" class="form-control mb-2">
+				<option value="today">Today</option>
+				<option value="yest">Yesterday</option>
+				<option value="cweek">Current Week</option>
+				<option value="pweek">Previous Week</option>
+				<option value="cmonth">Current Month</option>
+				<option value="pmonth">Previous Month</option>
+				<option value="cyear">Current Year</option>
+				<option value="pyear">Previous Year</option>
+				<option value="custom">Custom Duration (enter below)</option>
+			    </select>
+			    <div class="input-group mb-2">
+				<div class="input-group-prepend">
+				    <span class="input-group-text" style="width: 58px;">From</span>
+				</div>
+				<input class="form-control datepicker" type="text" name="from" id="from" value="01-06-2020">
+				<div class="input-group-append">
+				    <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+				</div>
+			    </div>
+			    <div class="input-group mb-2">
+				<div class="input-group-prepend">
+				    <span class="input-group-text" style="width: 58px;">To</span>
+				</div>
+				<input class="form-control datepicker" type="text" name="to" id="to" value="19-06-2020">
+				<div class="input-group-append">
+				    <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    </div>
+
+		</div>
+            </div>
+	    <div class="col-md-3">
+		<div class="card mb-5">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Input group</h6>
+		    </div>
+		    <div class="card-body">
+			<div class="input-group mb-3">
+			    <div class="input-group-prepend">
+				<div class="input-group-text">
+				    <input type="checkbox" aria-label="Checkbox for following text input">
+				</div>
+			    </div>
+			    <input type="text" class="form-control" aria-label="Text input with checkbox">
+			</div>
+
+			<div class="input-group mb-3">
+			    <div class="input-group-prepend">
+				<div class="input-group-text">
+				    <input type="radio" aria-label="Radio button for following text input">
+				</div>
+			    </div>
+			    <input type="text" class="form-control" aria-label="Text input with radio button">
+			</div>
+			<div class="input-group input-group-sm mb-3">
+			    <div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+			    </div>
+			    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+			</div>
+
+			<div class="input-group mb-3">
+			    <div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+			    </div>
+			    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+			</div>
+
+			<div class="input-group input-group-lg">
+			    <div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+			    </div>
+			    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+			</div>
+		    </div>
+
+		</div>
+            </div>
+	    <div class="col-lg-4">
+		<div class="card mb-4">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Inline forms</h6>
+		    </div>
+		    <div class="card-body">
+			<form class="form-inline">
+			    <label class="sr-only" for="inlineFormInputName2">Name</label>
+			    <input type="text" class="form-control form-control-sm mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+			    <button type="submit" class="btn btn-sm btn-primary mb-2">Submit</button>
+			</form>
+			<form class="form-inline">
+			    <label class="sr-only" for="inlineFormInputName2">Name</label>
+			    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+			    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+			</form>
+			<form class="form-inline">
+			    <label class="sr-only" for="inlineFormInputName2">Name</label>
+			    <input type="text" class="form-control form-control-lg mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+			    <button type="submit" class="btn btn-lg btn-primary mb-2">Submit</button>
+			</form>
+		    </div>
+		</div>
+		<div class="card mb-4">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Checkboxes and radios</h6>
+		    </div>
+		    <div class="card-body">
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+			    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+			</div>
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="customCheck1">
+			    <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+			</div>
+			<div class="custom-control custom-radio">
+			    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+			    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+			</div>
+			<div class="custom-control custom-radio">
+			    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+			    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+			</div>
+		    </div>
+		</div>
+            </div>
+	    <div class="col-lg-4">
+		<div class="card mb-4">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Form row</h6>
+		    </div>
+		    <div class="card-body">
+			<form>
+			    <div class="form-row">
+				<div class="form-group col-md-6">
+				    <label for="inputEmail4">Email</label>
+				    <input type="email" class="form-control" id="inputEmail4">
+				</div>
+				<div class="form-group col-md-6">
+				    <label for="inputPassword4">Password</label>
+				    <input type="password" class="form-control" id="inputPassword4">
+				</div>
+			    </div>
+			    <div class="form-group">
+				<label for="inputAddress">Address</label>
+				<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			    </div>
+			    <div class="form-group">
+				<label for="inputAddress2">Address 2</label>
+				<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+			    </div>
+			    <div class="form-row">
+				<div class="form-group col-md-6">
+				    <label for="inputCity">City</label>
+				    <input type="text" class="form-control" id="inputCity">
+				</div>
+				<div class="form-group col-md-4">
+				    <label for="inputState">State</label>
+				    <select id="inputState" class="form-control">
+					<option selected>Choose...</option>
+					<option>...</option>
+				    </select>
+				</div>
+				<div class="form-group col-md-2">
+				    <label for="inputZip">Zip</label>
+				    <input type="text" class="form-control" id="inputZip">
+				</div>
+			    </div>
+			    <div class="form-group">
+				<div class="form-check">
+				    <input class="form-check-input" type="checkbox" id="gridCheck">
+				    <label class="form-check-label" for="gridCheck">
+					Check me out
+				    </label>
+				</div>
+			    </div>
+			    <button type="submit" class="btn btn-primary">Sign in</button>
+			</form>
+		    </div>
+		</div>
+            </div>
+            <div class="col-lg-4">
+		<!-- Circle Buttons -->
+		<div class="card mb-4">
+		    <div class="card-header py-3">
+			<h6 class="m-0">Horizontal form</h6>
+		    </div>
+		    <div class="card-body">
+			<form>
+			    <div class="form-group row">
+				<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+				<div class="col-sm-10">
+				    <input type="email" class="form-control" id="inputEmail3">
+				</div>
+			    </div>
+			    <div class="form-group row">
+				<label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+				<div class="col-sm-10">
+				    <input type="password" class="form-control" id="inputPassword3">
+				</div>
+			    </div>
+			    <fieldset class="form-group">
+				<div class="row">
+				    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+				    <div class="col-sm-10">
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+					    <label class="form-check-label" for="gridRadios1">
+						First radio
+					    </label>
+					</div>
+					<div class="form-check">
+					    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+					    <label class="form-check-label" for="gridRadios2">
+						Second radio
+					    </label>
+					</div>
+					<div class="form-check disabled">
+					    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+					    <label class="form-check-label" for="gridRadios3">
+						Third disabled radio
+					    </label>
+					</div>
+				    </div>
+				</div>
+			    </fieldset>
+			    <div class="form-group row">
+				<div class="col-sm-2">Checkbox</div>
+				<div class="col-sm-10">
+				    <div class="form-check">
+					<input class="form-check-input" type="checkbox" id="gridCheck1">
+					<label class="form-check-label" for="gridCheck1">
+					    Example checkbox
+					</label>
+				    </div>
+				</div>
+			    </div>
+			    <div class="form-group row">
+				<div class="col-sm-10">
+				    <button type="submit" class="btn btn-primary">Sign in</button>
+				</div>
+			    </div>
+			</form>
+		    </div>
+		</div>
+            </div>
+	</div>
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

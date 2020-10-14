@@ -1,0 +1,35 @@
+// Pulling these images from Unsplash
+// Toshi the dog from https://unsplash.com/@charlesdeluvio - what a funny dog...
+
+/*Login*/
+.login-page{
+    min-height: 100vh;
+    background: url(../img/login-bg.png) 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    .card-header{
+	border-radius: 0;
+	border-bottom: 0 none;
+	text-align: center;
+    }
+    .card{
+	max-width: 390px;
+	width: 100%;
+	border: 0 none;
+	color: #fff;
+    }
+    .h2{
+	text-align: center;
+	margin-bottom: 1.5rem;
+	font-size: 26px;
+    }
+    .form-control{
+	border-color: #fff;
+    }
+    a:not(.btn){
+	color: #22c9fd;
+    }
+}

@@ -1,0 +1,121 @@
+<% var data = {
+title: "My profile",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content" class="bg-gray-200">
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+	<!-- Page Heading -->
+	<h1 class="h2 mb-0">My Profile</h1>
+	<%= _.template(require('./../includes/dashboard-header.html').default)(data) %>
+	<h2 class="h2 mb-4">Doctor Information</h2>
+	<div class="card mb-4" style="max-width: 667px;">
+	    <div class="card-header py-3">
+		<h2 class="h3 m-0">About Me</h2>
+	    </div>
+	    <div class="card-body pb-5">
+		<form class="form-edit" action="">
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-user"></i>
+				</span>
+				<strong>First Name:</strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" type="text" value="Riz">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-user"></i>
+				</span>
+				<strong>Last Name:</strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" type="text" value="Khawaja">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="far fa-calendar-alt"></i>
+				</span>
+				<strong>Date of birth:</strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" type="text" value="03/02/1979">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-envelope"></i>
+				</span>
+				<strong>Email:</strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" type="text" value="superriz@gmail.com">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-phone-alt"></i>
+				</span>
+				<strong>Phone:</strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" type="text" value="2103624510">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-map-marker-alt"></i>
+				</span>
+				<strong>Address:</strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" type="text" value="995 Wentworth Court  Brooklyn, NY 11215">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-briefcase"></i>
+				</span>
+				<strong>Job Title:</strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" type="text" value="The Edge Dental / Dentist">
+			</div>
+		    </div>
+		</form>
+	    </div>
+	</div>
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

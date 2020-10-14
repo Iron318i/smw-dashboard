@@ -1,0 +1,34 @@
+html{
+    font-size: 14px;
+}
+@import "base/rem";
+@import "base/fonts";
+@import "base/variables";
+@import "base/fontawesome";
+@import "base/bootstrap";
+
+@import "base/global";
+@import "base/utilities";
+
+@import "base/icons";
+@import "base/header";
+
+// Custom Components
+@import "base/dropdowns";
+@import "base/navs";
+@import "base/buttons";
+@import "base/forms";
+@import "base/cards";
+@import "base/tables";
+@import "base/login";
+@import "base/error";
+@import "base/footer";
+
+//@import "../../node_modules/datatables/media/css/jquery.dataTables.css";
+@import "../../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css";
+@import "../../node_modules/datatables.net-responsive-bs4/css/responsive.bootstrap4.css";
+@import "../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css";
+@import "base/main";
+
+@import "base/responsive";
+

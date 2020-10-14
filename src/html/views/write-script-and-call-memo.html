@@ -1,0 +1,147 @@
+<% var data = {
+title: "Call Script and Memo | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Pacients Management</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">Call Script and Memo</h2>
+            </div>
+            <div class="card-body">
+		<h3>Call script and call note</h3>
+		<hr>
+		<div class="row">
+		    <div class="col-md-10 col-xl-3">
+			<div class="info-w-icon">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#call-type"></use></svg>
+			    </span>
+			    <strong class="fsz-15">Call Type:</strong>
+			    <span>Additional call</span>
+			</div>
+		    </div>
+		</div>
+		<hr>
+		<p class="font-weight-bold fsz-15">Patient Information:</p>
+		<div class="row row-bordered patient-information">
+		    <div class="col-md-10 col-xl-3 mb-3">
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-address-card"></i></span>
+			    <strong>ID:</strong>
+			    <span>13486</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-user"></i></span>
+			    <strong>Name:</strong>
+			    <span>Melissa Garcia</span>
+			</div>
+			<div class="info-w-icon">
+			    <span class="icon-circle">
+				<svg width="17px"><use xlink:href="./assets/img/sprite.svg#gender"></use></svg>
+			    </span>
+			    <strong>Gender:</strong>
+			    <span>Female</span>
+			</div>
+		    </div>
+		    <div class="col-md-10 col-xl-4 mb-3">
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="far fa-calendar-alt"></i></span>
+			    <strong>Date of birth:</strong>
+			    <span>03/02/1990</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+			    <strong>Email:</strong>
+			    <span>melzep3@gmail.com</span>
+			</div>
+			<div class="info-w-icon">
+			    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+			    <strong>Phone:</strong>
+			    <span>2103624510</span>
+			</div>
+		    </div>
+		    <div class="col-md-10 col-xl-5 mb-3">
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="19px"><use xlink:href="./assets/img/sprite.svg#healthcare"></use></svg>
+			    </span>
+			    <strong>Diagnosed:</strong>
+			    <span>Yes</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#medical-guard"></use></svg>
+			    </span>
+			    <strong>Medical Insurance Plan:</strong>
+			    <span>Private insurance plan</span>
+			</div>
+			<div class="info-w-icon">
+			    <span class="icon-circle">
+				<svg width="13px"><use xlink:href="./assets/img/sprite.svg#tooth"></use></svg>
+			    </span>
+			    <strong>Issues and Concerns:</strong>
+			    <span>Lorem Ipsum Dolorsitamet</span>
+			</div>
+		    </div>
+		</div>
+		<hr>
+		<div class="row mt-5">
+		    <div class="col-md-5 col-xl-3 mb-3">
+			<label class="label-w-icon mb-4">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#call-note"></use></svg>
+			    </span>
+			    <strong class="fsz-16">Today`s call note:</strong>
+			</label>
+			<div class="custom-control custom-radio mb-2">
+			    <input type="radio" id="callNote1" name="callNote" class="custom-control-input" checked>
+			    <label class="custom-control-label" for="callNote1">Call Successful</label>
+			</div>
+			<div class="custom-control custom-radio mb-2">
+			    <input type="radio" id="callNote2" name="callNote" class="custom-control-input">
+			    <label class="custom-control-label" for="callNote2">Call failed</label>
+			</div>
+			<div class="custom-control custom-radio mb-2">
+			    <input type="radio" id="callNote3" name="callNote" class="custom-control-input">
+			    <label class="custom-control-label" for="callNote3">Left voice mail</label>
+			</div>
+			<div class="custom-control custom-radio mb-2">
+			    <input type="radio" id="callNote4" name="callNote" class="custom-control-input">
+			    <label class="custom-control-label" for="callNote4">No further follow-up</label>
+			</div>
+		    </div>
+		    <div class="col-md-7 col-xl-4">
+			<label class="label-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="15px"><use xlink:href="./assets/img/sprite.svg#comments"></use></svg>
+			    </span>
+			    <strong class="fsz-16">Comments:</strong>
+			</label>
+			<textarea class="form-control" rows="7"></textarea>
+		    </div>
+		</div>
+		<div class="mt-5">
+		    <button type="button" class="btn btn-warning btn-lg">SAVE</button>
+		</div>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

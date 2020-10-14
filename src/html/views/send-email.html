@@ -1,0 +1,141 @@
+<% var data = {
+title: "Send Email | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Pacients Management</h1>
+
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">Send Email</h2>
+            </div>
+            <div class="card-body">
+		<h3>Send email to patient:</h3>
+		<hr>
+		<div class="row">
+		    <div class="col-md-10 col-xl-3">
+			<div class="info-w-icon">
+			    <span class="icon-circle"><i class="fas fa-at"></i></span>
+			    <strong class="fsz-15">Email Type:</strong>
+			    <span>Custom Email</span>
+			</div>
+		    </div>
+		</div>
+		<hr>
+		<p class="font-weight-bold fsz-15">Patient Information:</p>
+		<div class="row row-bordered patient-information">
+		    <div class="col-md-10 col-xl-3 mb-3">
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-address-card"></i></span>
+			    <strong>ID:</strong>
+			    <span>13486</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-user"></i></span>
+			    <strong>Name:</strong>
+			    <span>Melissa Garcia</span>
+			</div>
+			<div class="info-w-icon">
+			    <span class="icon-circle">
+				<svg width="17px"><use xlink:href="./assets/img/sprite.svg#gender"></use></svg>
+			    </span>
+			    <strong>Gender:</strong>
+			    <span>Female</span>
+			</div>
+		    </div>
+		    <div class="col-md-10 col-xl-4 mb-3">
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="far fa-calendar-alt"></i></span>
+			    <strong>Date of birth:</strong>
+			    <span>03/02/1990</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+			    <strong>Email:</strong>
+			    <span>melzep3@gmail.com</span>
+			</div>
+			<div class="info-w-icon">
+			    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+			    <strong>Phone:</strong>
+			    <span>2103624510</span>
+			</div>
+		    </div>
+		    <div class="col-md-10 col-xl-5 mb-3">
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="19px"><use xlink:href="./assets/img/sprite.svg#healthcare"></use></svg>
+			    </span>
+			    <strong>Diagnosed:</strong>
+			    <span>Yes</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#medical-guard"></use></svg>
+			    </span>
+			    <strong>Medical Insurance Plan:</strong>
+			    <span>Private insurance plan</span>
+			</div>
+			<div class="info-w-icon">
+			    <span class="icon-circle">
+				<svg width="13px"><use xlink:href="./assets/img/sprite.svg#tooth"></use></svg>
+			    </span>
+			    <strong>Issues and Concerns:</strong>
+			    <span>Lorem Ipsum Dolorsitamet</span>
+			</div>
+		    </div>
+		</div>
+            </div>
+	</div>
+	<div class="card card-primary mb-4">
+            <div class="card-body">
+		<h3>Compose Email:</h3>
+		<hr>
+		<div class="row">
+		    <div class="col-md-10 col-xl-3">
+			<div class="form-group">
+			<label class="label-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#email-subject"></use></svg>
+			    </span>
+			    <strong>Email Subject:</strong>
+			</label>
+			    <input type="email" class="form-control" placeholder="Enter Email Subject">
+			</div>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-12 col-xl-7">
+			<div class="form-group">
+			<label class="label-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#symbols"></use></svg>
+			    </span>
+			    <strong>Email: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="Tooltip on top"></i></strong>
+			</label>
+			    <textarea class="tinymce"></textarea>
+			</div>
+			<p class="fsz-13"><strong>Tips:</strong> Press SHIFT+ENTER for new line and ENTER for new paragraph, Right click for context menu.</p>
+		    </div>
+		</div>
+		<div class="mt-3">
+		    <button type="button" class="btn btn-warning btn-lg">SEND EMAIL</button>
+		</div>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

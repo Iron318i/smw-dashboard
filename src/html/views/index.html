@@ -1,0 +1,410 @@
+<% var data = {
+title: "Practitioners Management | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Somnowell Dashboard</h1>
+
+	<!-- DataTales Example -->
+	<div class="card mb-4">
+            <div class="card-body">
+		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+		    <div class="col mb-4">
+			<div class="card card-tile bg-info">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">Number of leads</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#team"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">860</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-up"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col mb-4">
+			<div class="card card-tile bg-info">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">Number of calls made</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#phone"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">1244</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-up"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col mb-4">
+			<div class="card card-tile bg-info">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">Number of emails sent</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#mail"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">921</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-up"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col mb-4">
+			<div class="card card-tile bg-info">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">Revenue</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#money-bag"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">$97.90</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-up"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+		    <div class="col mb-4">
+			<div class="card card-tile bg-primary">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">Number of appointments</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#checked"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">860</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-up"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col mb-4">
+			<div class="card card-tile bg-primary">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">Number of treatments</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#doctor"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">1244</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-up"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col mb-4">
+			<div class="card card-tile bg-primary">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">number of overdue follow-ups</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#close"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">921</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-down"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col mb-4">
+			<div class="card card-tile bg-primary">
+			    <div class="card-body same-height-md">
+				<h5 class="card-title">Date range adjuster</h5>
+				<div class="row">
+				    <div class="col-auto">
+					<div class="icon-wrp">
+					    <svg class="icon">
+					    <use xlink:href="./assets/img/sprite.svg#calendar"></use>
+					    </svg>
+					</div>
+				    </div>
+				    <div class="col">
+					<div class="num">12</div>
+					<div class="fsz-13">Better than last week (12.4%) <i class="fas fa-arrow-up"></i></div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="card mb-4">
+		    <div class="card-header">
+			<h3 class="h3 m-0">Today`s tasks</h3>
+		    </div>
+		    <div class="card-body card-tasks">
+			<div class="row">
+			    <div class="col-lg-6">
+				<div class="tasks-list">
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				</div>
+			    </div>
+			    <div class="col-lg-6">
+				<div class="tasks-list">
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Email Jacob Rogers again to talk about Implants.</a></div>
+					</div>
+					<div class="time col-auto">From 2pm -3pm</div>
+				    </div>
+				    <div class="task row">
+					<div class="icon col-auto">
+					    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+					</div>
+					<div class="info col">
+					    <div class="desc">FOLLOW UP LEAD</div>
+					    <div class="name"><a href="#">Call Jacob Rogers.</a></div>
+					</div>
+					<div class="time col-md-auto">From 3pm -3:30pm</div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div>
+		</div>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

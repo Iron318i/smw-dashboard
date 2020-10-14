@@ -1,0 +1,150 @@
+@include media-breakpoint-up(md) {
+    .container,
+    .container-fluid {
+	padding-left: $grid-gutter-width;
+	padding-right: $grid-gutter-width;
+    }
+    .topbar {
+	position: relative;
+	&:before{
+	    content: "";
+	    position: absolute;
+	    display: block;
+	    left: 0;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    width: 1px;
+	    height: 40px;
+	    background-color: #00d3ff;
+	}
+    }
+    .dashboard-header .row {
+	min-height: 240px;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .card-tasks{
+	.row{
+	    justify-content: space-between;
+	}
+	.col-lg-6{
+	    max-width: 49%;
+	}
+    }
+    .table-unbounce-cm{
+	.col-actions{
+	    width: 225px;
+	}
+    }
+    .table-consultations{
+	.col-actions{
+	    width: 339px;
+	}
+    }
+    .consultation-filters{
+	.select-wrp{
+	    flex: 0 0 calc(33.333% - 144px/3);
+	}
+	.form-inline .form-control {
+	    width: 100%;
+	}
+    }
+}
+@include media-breakpoint-up(xl) {
+    .row-bordered{
+	> [class*="col-"]+ [class*="col-"]{
+	    border-left: 1px solid #e2e2e2;
+	}
+    }
+    .video-screen{
+	.col-xl-3 {
+	    flex: 0 0 31.5%;
+	    max-width: 31.5%;
+	}
+	.col-xl-6 {
+	    flex: 0 0 37%;
+	    max-width: 37%;
+	}
+	.notes{
+	    .form-group{
+		flex-grow: 1;
+		.form-control{
+		    height: 100%;
+		}
+	    }
+	}
+    }
+}
+@media(min-width:1440px){
+    .row-bordered{
+	margin-right: -25px;
+	margin-left: -25px;
+	> [class*="col-"] {
+	    padding-left: 25px;
+	    padding-right: 25px;
+	}
+    }
+}
+@media(min-width:1470px){
+    .practioners-search{
+	.col-search{
+	    flex: 0 0 25%;
+	    max-width: 25%;
+	}
+    }
+}
+@media(min-width:1600px){
+    .card-tile .num {
+	font-size: 3.64286rem;
+    }
+    .topbar{
+	.navbar-search {
+	    width: rem(765px);
+	}
+    }
+    .table-unbounce-cm{
+	.col-actions{
+	    width: 417px;
+	}
+    }
+    .consultation-parameters{
+	> .col-lg-6, > .col-12{
+	    flex: 0 0 33.33333%;
+	    max-width: 33.33333%;
+	}
+    }
+}
+@include media-breakpoint-down(lg) {
+    .table-consultations{
+	.col-actions{
+	    width: 130px;
+	}
+    }
+}
+@include media-breakpoint-down(sm) {
+    .task .time {
+	flex: 0 0 100%;
+	width: auto;
+	max-width: 100%;
+	text-align: center;
+	padding-top: 0;
+    }
+    .profile-avatar,
+    .dashboard-menu{
+	display: none;
+    }
+    .card-header-btn{
+	flex-direction: column;
+	align-items: flex-start;
+	.btn{
+	    margin-top: .5rem;
+	}
+    }
+}
+@include media-breakpoint-down(xs) {
+    .consultation-filters{
+	.form-group{
+	    flex: 0 0 100%;
+	}
+    }
+}

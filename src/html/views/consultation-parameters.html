@@ -1,0 +1,172 @@
+<% var data = {
+title: "Virtual Consultations | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Virtual Consultations</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">Consultation Parameters</h2>
+            </div>
+            <div class="card-body">
+		<div class="row row-bordered consultation-parameters">
+		    <div class="col-lg-6">
+			<p class="font-weight-bold fsz-15">Patient Information:</p>
+			<form action="" class="form-edit">
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					    <i class="fas fa-address-card"></i>
+					</span>
+					<strong>ID: </strong>
+				    </label>
+				</div>
+				<div class="col col-control" style="max-width: 75px;">
+				    <input class="form-control" type="text" value="13486" readonly>
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					   <i class="fas fa-user"></i>
+					</span>
+					<strong>Name: </strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="Melissa Garcia">
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					  <svg width="17px"><use xlink:href="./assets/img/sprite.svg#gender"></use></svg>
+					</span>
+					<strong>Gender: </strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="Female">
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					 <i class="far fa-calendar-alt"></i>
+					</span>
+					<strong>Date of birth:</strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="03/02/1990">
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					 <i class="fas fa-envelope"></i>
+					</span>
+					<strong>Email:</strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="melzep3@gmail.com">
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					<i class="fas fa-phone-alt"></i>
+					</span>
+					<strong>Phone:</strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="2103624510">
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					<svg width="19px"><use xlink:href="./assets/img/sprite.svg#healthcare"></use></svg>
+					</span>
+					<strong>Diagnosed:</strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="Yes">
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					<svg width="14px"><use xlink:href="./assets/img/sprite.svg#medical-guard"></use></svg>
+					</span>
+					<strong>Medical Insurance Plan:</strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="Private insurance plan">
+				</div>
+			    </div>
+			    <div class="row">
+				<div class="col-12 col-label">
+				    <label class="label-w-icon">
+					<span class="icon-circle">
+					<svg width="13px"><use xlink:href="./assets/img/sprite.svg#tooth"></use></svg>
+					</span>
+					<strong>Issues and Concerns:</strong>
+				    </label>
+				</div>
+				<div class="col col-control">
+				    <input class="form-control" type="text" value="Lorem Ipsum Dolorsitamet">
+				</div>
+			    </div>
+			</form>
+		    </div>
+		    <div class="col-lg-6">
+			<p class="font-weight-bold fsz-15">Select a Date & Time:</p>
+			<div class="mt-3">
+			    <img src="./assets/uploads/select-date-time.png" alt="select-date-time.png" class="img-fluid">
+			</div>
+		    </div>
+		    <div class="col-12 notes">
+			<p class="font-weight-bold fsz-15">Patient Notes:</p>
+			<div class="form-group">
+			    <textarea rows="10" class="form-control" readonly>Quisque vulputate et nunc id aliquet. Nunc imperdiet mauris sit amet porta condimentum. Donec leo dui, tempus eget consectetur at, dictum eu lectus. Donec aliquet maximus nibh, viverra pretium augue eleifend vitae. Cras placerat auctor placerat. Nullam efficitur erat vitae libero sodales feugiat. Donec ipsum mauris, consequat a convallis sed, tristique quis augue. Nam purus turpis, faucibus nec sem nec, placerat placerat sem. Curabitur neque odio, ornare nec fermentum eget, commodo vitae eros. Etiam at fringilla ligula. Vestibulum sit amet orci nisl. Suspendisse molestie est accumsan augue viverra, vitae consequat ex tempus.</textarea>
+			</div>
+		    </div>
+		</div>
+		<hr class="my-4">
+		<div class="text-right">
+		    <button type="button" class="btn btn-warning btn-lg mb-2">SAVE</button>
+		    <button type="button" class="btn btn-warning btn-lg ml-2 mb-2">CLOSE</button>
+		</div>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

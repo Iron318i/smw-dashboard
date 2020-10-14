@@ -1,0 +1,403 @@
+<% var data = {
+title: "Practitioners Management | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Pacients Management</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">My Patients</h2>
+            </div>
+            <div class="card-body">
+		<p>Patient Search:</p>
+		<div class="form-row practioners-search justify-content-md-between">
+		    <div class="col-12 mr-4 col-search">
+			<div class="input-group mb-2">
+			    <input type="text" class="form-control border-right-0" aria-label="Search" aria-describedby="basic-addon2">
+			    <div class="input-group-append">
+				<button class="btn btn-outline-light border-left-0" type="button">
+				    <i class="fas fa-search"></i>
+				</button>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col-sm-6 col-lg-auto">
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch1">
+			    <label class="custom-control-label" for="PractionersSearch1">Contacted</label>
+			</div>
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch2">
+			    <label class="custom-control-label" for="PractionersSearch2">Connected</label>
+			</div>
+		    </div>
+		    <div class="col-sm-6 col-lg-auto">
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch3">
+			    <label class="custom-control-label" for="PractionersSearch3">Appointment made</label>
+			</div>
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch4">
+			    <label class="custom-control-label" for="PractionersSearch4">Consulted</label>
+			</div>
+		    </div>
+		    <div class="col-sm-6 col-lg-auto">
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch5">
+			    <label class="custom-control-label" for="PractionersSearch5">Sent to sleep test</label>
+			</div>
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch6">
+			    <label class="custom-control-label" for="PractionersSearch6">Prescribed</label>
+			</div>
+		    </div>
+		    <div class="col-sm-6 col-lg-auto">
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch6">
+			    <label class="custom-control-label" for="PractionersSearch6">Inserted</label>
+			</div>
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch7">
+			    <label class="custom-control-label" for="PractionersSearch7">Post insertion follow up</label>
+			</div>
+		    </div>
+		    <div class="col-sm-6 col-lg-auto">
+			<div class="custom-control custom-checkbox mb-2">
+			    <input type="checkbox" class="custom-control-input" id="PractionersSearch8">
+			    <label class="custom-control-label" for="PractionersSearch8">No further follow up</label>
+			</div>
+		    </div>
+		    <div class="col-12 col-xl-auto">
+			<div class="form-group mb-2">
+			    <button type="button" class="btn btn-warning btn-sm mw-87">SEARCH</button>
+			</div>
+			<div class="form-group mb-0">
+			    <button type="button" class="btn btn-warning btn-sm mw-87">RESET</button>
+			</div>
+		    </div>
+		</div>
+		<hr>
+		<h2 class="h3 mb-2">List of Patients <a href="#" class="btn btn-warning btn-icon-split">
+			<span class="text">ADD NEW PACIENT</span>
+			<span class="icon">
+			    <i class="fas fa-user-plus"></i>
+			</span>
+		    </a>
+		</h2>
+		<table class="table table-striped table-dataTable" id="dataTable" width="100%" cellspacing="0">
+		    <thead class="thead-dark">
+			<tr>
+			    <th>Date</th>
+			    <th>ID</th>
+			    <th>First Name</th>
+			    <th>Last Name</th>
+			    <th class="no-sort">Email</th>
+			    <th class="no-sort">Phone</th>
+			    <th>Status</th>
+			    <th class="no-sort" style="width: 290px">Actions</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>13486</td>
+			    <td>Melissa</td>
+			    <td>Garcia</td>
+			    <td>melzep@gmail.com</td>
+			    <td>2103624510</td>
+			    <td>n/a</td>
+			    <td><button type="button" class="btn btn-warning btn-sm">Send Email</button><button type="button" class="btn btn-warning btn-sm">Write Call Memo</button><button type="button" class="btn btn-secondary btn-sm">Edit Status</button></td>
+			</tr>
+		    </tbody>
+		</table>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

@@ -1,0 +1,296 @@
+<% var data = {
+title: "Unbounce Clients Management | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Unbounce Clients Management</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">Clients Management</h2>
+            </div>
+            <div class="card-body">
+		<h2 class="h3 mb-4">Add New Client</h2>
+		<form class="form-edit" action="">
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-user"></i>
+				</span>
+				<strong>Client Name: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Full name of client. It should be exact like used in campaigns."></i></strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <input class="form-control" name="title" type="text" id="title" value="">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-envelope"></i>
+				</span>
+				<strong>Email Address: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="One or more email addresses seperated by comma"></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <input class="form-control" name="email" type="text" id="email" value="">
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-align-left"></i>
+				</span>
+				<strong>Email Text: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="It is pricing text of pracitioner. It will be merged in email template that will be sent to patient."></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <textarea class="form-control" name="comments" rows="8" id="comments"></textarea>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-certificate"></i>
+				</span>
+				<strong>Certified: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Please check if pracitioner is certified"></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" name="certified" id="certified">
+				<label class="custom-control-label" for="certified">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-chart-line"></i>
+				</span>
+				<strong>Promoted: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Please check if pracitioner is promoted"></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <div class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input" name="promoted" id="promoted">
+				<label class="custom-control-label" for="promoted">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-paint-brush"></i>
+				</span>
+				<strong>Colour: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Please choose membership level of client"></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <select class="form-control" name="colorid">
+				<option value="0" selected="selected">-- none --</option>
+				<option value="1">Bronze</option>
+				<option value="2">Silver</option>
+				<option value="3">Gold</option>
+				<option value="4">Platinum</option>
+			    </select>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-mail-bulk"></i>
+				</span>
+				<strong>Stop Sending Referral Emails to Pract.: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="If it is checked script will not send enquiry details to clients"></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <div class="custom-control custom-checkbox">
+				<input name="stop_sending_pract_refer"  class="custom-control-input" type="checkbox" id="stop_sending_pract_refer" value="">
+				<label class="custom-control-label" for="stop_sending_pract_refer">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-map-marker-alt"></i>
+				</span>
+				<strong>Address: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="It is optional field. It only will be used to get latitude and longitude of pracititioner. Lat/long is important for pracititioner recomendations. Please enter address and click on button to get lat/long."></i></strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <div class="form-inline">
+				<input name="address" type="text" id="address" class="form-control mr-2" placeholder="Latitude/Longitude"  aria-describedby="button-addon2">
+				<button class="btn btn-info" name="getlng" id="getlng" onclick="codeAddress()">Click to get Lng/Lat for this address</button>
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-map-marked"></i>
+				</span>
+				<strong>Longitude: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Longitude of pracitioner that is necessary for recomending this pracitioner according to patient area."></i></strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <div class="form-inline">
+				<input  class="form-control" name="lng" type="text" id="lng" value="0">
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-map-marked"></i>
+				</span>
+				<strong>Latitude: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Latitude of pracitioner that is necessary for recomending this pracitioner according to patient area."></i></strong>
+			    </label>
+			</div>
+			<div class="col col-control">
+			    <div class="form-inline">
+				<input class="form-control mr-2" name="lat" type="text" id="lat" value="0" size="20" maxlength="20">
+				<input class="btn btn-info" type="button" value="Show on map" name="showmap" id="showmap" onclick="initialize()">
+			    </div>
+			</div>
+		    </div>
+		    <hr>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-user-cog"></i>
+				</span>
+				<strong>Send on Bhalf off this Pract. : <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="If it is checked then script will send email to patient on behalf of this pracititioner."></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <div class="custom-control custom-checkbox">
+				<input name="on_behalf"  class="custom-control-input" type="checkbox" id="on_behalf" value="">
+				<label class="custom-control-label" for="on_behalf">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-envelope-open-text"></i>
+				</span>
+				<strong>Template Override: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="If it is checked then script will use this email template otherwise it will use template of Email Settings section."></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <div class="custom-control custom-checkbox">
+				<input name="template_override"  class="custom-control-input" type="checkbox" id="template_override" value="">
+				<label class="custom-control-label" for="template_override">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-ellipsis-h"></i>
+				</span>
+				<strong>Merge Insert Menu: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Place cursor in editor and click on any one of these links to insert in editor. This text of template will be replaced with client data when it will be delivered to patients."></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <ul class="nav merge-menu">
+				<li>
+				    <a href="javascript:insertMerge('PatientName');">Patient Name</a>
+				</li>
+				<li>
+				    <a href="javascript:insertMerge('PractName');">Client Name</a>
+				</li>
+				<li>
+				    <a href="javascript:insertMerge('PractDetail');">Client Detail</a>
+				</li>
+			    </ul>
+			</div>
+		    </div>
+		     <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <svg width="14px"><use xlink:href="./assets/img/sprite.svg#symbols"></use></svg>
+				</span>
+				<strong>Patient Email Template: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="Script will send this text to patient in response of enquiry."></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <textarea class="tinymce" id="patient_email" name="patient_email"></textarea>
+			    <p class="fsz-13 mt-3"><strong>Tips:</strong> Press SHIFT+ENTER for new line and ENTER for new paragraph, Right click for context menu.</p>
+			</div>
+		    </div>
+		    <hr>
+		     <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				    <i class="fas fa-upload"></i>
+				</span>
+				<strong>Publish: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="If it is checked then client will be recomended and also will receive reports"></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			    <div class="custom-control custom-checkbox">
+				<input name="publish"  class="custom-control-input" type="checkbox" id="publish" value="">
+				<label class="custom-control-label" for="publish">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		     <div class="row">
+			 <div class="col-12 col-label"></div>
+			<div class="col-12 col-control">
+			   <input type="submit" name="Submit" value="Submit"  class="btn btn-warning btn-lg text-uppercase">
+			   <a href="index.php" class="btn btn-info btn-lg">&lt;&lt; BACK</a>
+			</div>
+		    </div>
+		    <hr>
+		    <div class="row">
+			<div class="col-12 col-label">
+			    <label class="label-w-icon">
+				<span class="icon-circle">
+				   <i class="far fa-map"></i>
+				</span>
+				<strong>Map Preview: <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="top" title="" data-original-title="When you will click Show on Map button, map will show here"></i></strong>
+			    </label>
+			</div>
+			<div class="col-12 col-control">
+			   <div id="map-canvas" style="width: 100%; max-width: 480px; height: 320px;margin-top:20px; border:1px solid #CCC;"></div>
+			</div>
+		    </div>
+		</form>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

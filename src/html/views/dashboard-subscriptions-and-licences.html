@@ -1,0 +1,104 @@
+<% var data = {
+title: "Subscriptions and Licences",
+
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content" class="bg-gray-200">
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+	<!-- Page Heading -->
+	<h1 class="h2 mb-0">My Profile</h1>
+	<%= _.template(require('./../includes/dashboard-header.html').default)(data) %>
+	<h2 class="h2 mb-4">Subscriptions and Licences</h2>
+	<div class="card mb-4" style="max-width: 800px;">
+	    <div class="card-header py-3">
+		<h2 class="h3 m-0">Your Subscription</h2>
+	    </div>
+	    <div class="card-body pb-2">
+		<p class="fsz-13">Your Subscriptions are shown below. Cancelled Subscriptions are shown for information only and cannot be restored, however if you have a cancelled Subscription and would like to continue with DenGro, you can add a new Subscription.</p>
+		<div class="plan px-3 bg-gray-100 mb-2">
+		    <div class="row equal">
+			<div class="col-md-9 py-3">
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">PLAN:</div>
+				<div class="col-sm-8 font-weight-bold py-1">Unlimited Treatments (volume discount)</div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">STATUS:</div>
+				<div class="col-sm-8 font-weight-bold py-1"><span class="badge badge-success">Success</span></div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">PAYMENT METHOD:</div>
+				<div class="col-sm-8 font-weight-bold py-1">Payment card</div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">BILLING PERIOD:</div>
+				<div class="col-sm-8 font-weight-bold py-1">to 17/06/2020</div>
+			    </div>
+			</div>
+			<div class="col-md-3 bg-gray-200 justify-content-center">
+			    <a href="#" class="btn btn-sm btn-block btn-warning my-2">VIEW DETAILS<br> AND LICENCES</a>
+			</div>
+		    </div>
+		</div>
+		<div class="plan px-3 bg-gray-100 mb-2">
+		    <div class="row equal">
+			<div class="col-md-9 py-3">
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">PLAN:</div>
+				<div class="col-sm-8 font-weight-bold py-1">Unlimited Treatments (volume discount)</div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">STATUS:</div>
+				<div class="col-sm-8 font-weight-bold py-1"><span class="badge badge-success">Success</span></div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">PAYMENT METHOD:</div>
+				<div class="col-sm-8 font-weight-bold py-1">Payment card</div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">BILLING PERIOD:</div>
+				<div class="col-sm-8 font-weight-bold py-1">to 17/06/2020</div>
+			    </div>
+			</div>
+			<div class="col-md-3 bg-gray-200 justify-content-center">
+			    <a href="#" class="btn btn-sm btn-block btn-warning my-2">VIEW DETAILS<br> AND LICENCES</a>
+			</div>
+		    </div>
+		</div>
+		<div class="plan px-3 bg-gray-100 mb-2">
+		    <div class="row equal">
+			<div class="col-md-9 py-3">
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">PLAN:</div>
+				<div class="col-sm-8 font-weight-bold py-1">Unlimited Treatments (volume discount)</div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">STATUS:</div>
+				<div class="col-sm-8 font-weight-bold py-1"><span class="badge badge-success">Success</span></div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">PAYMENT METHOD:</div>
+				<div class="col-sm-8 font-weight-bold py-1">Payment card</div>
+			    </div>
+			    <div class="row">
+				<div class="col-sm-4 fsz-12">BILLING PERIOD:</div>
+				<div class="col-sm-8 font-weight-bold py-1">to 17/06/2020</div>
+			    </div>
+			</div>
+			<div class="col-md-3 bg-gray-200 justify-content-center">
+			    <a href="#" class="btn btn-sm btn-block btn-warning my-2">VIEW DETAILS<br> AND LICENCES</a>
+			</div>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

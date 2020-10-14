@@ -1,0 +1,80 @@
+.custom-radio {
+    .custom-control-input:checked~.custom-control-label:before {
+	color: #fff;
+	border-color: $custom-control-indicator-border-color;
+	background-color:  $custom-control-indicator-bg;
+    }
+    .custom-control-label:after {
+	background: no-repeat 50%/45% 45%;
+    }
+}
+.form-edit{
+    .col-control{
+	margin-bottom: .75rem;
+    }
+    .label-w-icon{
+	margin-top: .5rem;
+    }
+    .input-group,
+    select.form-control,
+    input.form-control{
+	max-width: 390px;
+    }
+    textarea.form-control{
+	max-width: 600px;
+    }
+    .custom-control{
+	margin-top: .5rem;
+    }
+    @include media-breakpoint-up(md) {
+	.col-label{
+	    flex: 0 0 240px;
+	}
+	.col-control{
+	    flex: 0 0 calc(100% - 240px);
+	    max-width: 800px;
+	}
+    }
+    .merge-menu{
+	margin-top: .5rem;
+	li+li:before{
+	    content: '|';
+	    margin: 0 .2rem;
+	}
+    }
+}
+
+.custom-switch{
+    padding-left:4.84286rem;
+    .custom-control-input {
+	width: 2.28571rem;
+	height: 1.89286rem;
+    }
+}
+.custom-switch .custom-control-label:before{
+    content: "";
+    position: absolute;
+    left:-4.84286rem;
+    width:4.34286rem;
+    height: 2.28571rem;
+    pointer-events:all;
+    border-radius:1.14286rem;
+    display: block;
+    top: -.39286rem;
+    background-color: #eaeaea;
+    border-color: #eaeaea;
+}
+.custom-switch .custom-control-label:after{
+    top:calc(-.39286rem + 4px);
+    left:calc(-4.84286rem + 4px);
+    width:calc(2.28571rem - 8px);
+    height:calc(2.28571rem - 8px);
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius:1.14286rem;
+    transition:transform .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+@media (prefers-reduced-motion:reduce){
+    .custom-switch .custom-control-label:after{transition:none}
+}
+.custom-switch .custom-control-input:checked~.custom-control-label:after{background-color:#eaeaea;transform:translateX(2.05714rem)}
+.custom-switch .custom-control-input:disabled:checked~.custom-control-label:before{background-color:rgba(1,113,171,.5)}

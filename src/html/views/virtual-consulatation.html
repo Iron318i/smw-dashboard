@@ -1,0 +1,309 @@
+<% var data = {
+title: "Virtual Consultations | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Virtual Consultations</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">List of All Consultation</h2>
+            </div>
+            <div class="card-body">
+		<div class="form-row">
+		    <div class="col-12 col-lg-4">
+			<label>Consultation Search:</label>
+			<div class="input-group mb-2">
+			    <input type="text" class="form-control border-right-0" aria-label="Search" aria-describedby="basic-addon2">
+			    <div class="input-group-append">
+				<button class="btn btn-outline-light border-left-0" type="button">
+				    <i class="fas fa-search"></i>
+				</button>
+			    </div>
+			</div>
+		    </div>
+		    <div class="col-12 col-lg-8 consultation-filters">
+			<label>Filters:</label>
+			<div class="form-inline">
+			    <div class="form-group select-wrp">
+				<input type="text" class="form-control mr-sm-2" placeholder="Patient">
+			    </div>
+			    <div class="form-group select-wrp">
+				<select class="form-control mr-sm-2">
+				    <option>Upcoming Meetings</option>
+				    <option>Previous Meetings</option>
+				</select>
+			    </div>
+			    <div class="form-group select-wrp">
+				<div class="row no-gutters mr-sm-2">
+				    <div class="col-sm-6 pr-sm-2"><input class="form-control datepicker" type="text" name="from" id="from" placeholder="Date from"></div>
+				    <div class="col-sm-6"><input class="form-control datepicker" type="text" name="from" id="to" placeholder="Date to"></div>
+				</div>
+			    </div>
+			    <div class="form-group btns">
+				<button type="button" class="btn btn-warning mr-2">APPLY</button>
+				<button type="button" class="btn btn-secondary">RESET</button>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<hr>
+		<h2 class="h3 mb-2">List of Consultation <a href="#" class="btn btn-warning btn-icon-split">
+			<span class="text">ADD NEW CONSULTATION</span>
+			<span class="icon">
+			    <i class="fas fa-user-plus"></i>
+			</span>
+		    </a>
+		</h2>
+		<table class="table table-striped table-dataTable table-consultations" id="dataTable" width="100%" cellspacing="0">
+		    <thead class="thead-dark">
+			<tr>
+			    <th>Date</th>
+			    <th>Time</th>
+			    <th>Patient Name</th>
+			    <th class="no-sort">Description</th>
+			    <th>Status</th>
+			    <th class="col-actions no-sort">Actions</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr class="past">
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-secondary-light mw-55">Past</span></td>
+			    <td class="text-right"><button type="button" class="btn btn-secondary btn-sm">View</button><button type="button" class="btn btn-secondary btn-sm">Delete</button></td>
+			</tr>
+			<tr class="past">
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-secondary-light mw-55">Past</span></td>
+			    <td class="text-right"><button type="button" class="btn btn-secondary btn-sm">View</button><button type="button" class="btn btn-secondary btn-sm">Delete</button></td>
+			</tr>
+			<tr class="past">
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-secondary-light mw-55">Past</span></td>
+			    <td class="text-right"><button type="button" class="btn btn-secondary btn-sm">View</button><button type="button" class="btn btn-secondary btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr class="past">
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-secondary-light mw-55">Past</span></td>
+			    <td class="text-right"><button type="button" class="btn btn-secondary btn-sm">View</button><button type="button" class="btn btn-secondary btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+			<tr>
+			    <td>23-11-2019</td>
+			    <td>2pm - 3pm</td>
+			    <td>Melissa Rowson</td>
+			    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus efficitur in eros iaculis blandit. Nullam metus erat, modio. </td>
+			    <td><span class="badge badge-outline-success mw-55">Future</span></td>
+			    <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#virtualConsulationModal">View</button><a href="./consultation-parameters.html" class="btn btn-secondary btn-sm">Edit</a><a href="./video-screen.html" class="btn btn-warning btn-sm">Start Consultation</a><button type="button" class="btn btn-warning btn-sm">Delete</button></td>
+			</tr>
+		    </tbody>
+		</table>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<div class="modal fade" id="virtualConsulationModal" tabindex="-1" role="dialog" aria-labelledby="virtualConsulationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+	<div class="modal-content">
+	    <div class="modal-header">
+		<h3 class="modal-title" id="virtualConsulationModalLabel">Virtual Consulatation</h3>
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    <svg width="17px" height="17px">
+		    <use xlink:href="./assets/img/sprite.svg#close"></use>
+		    </svg>
+		</button>
+	    </div>
+	    <div class="modal-body px-lg-4">
+		<div class="row row-bordered">
+		    <div class="col-lg-7">
+			<p class="font-weight-bold fsz-15">Patient Information:</p>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-address-card"></i></span>
+			    <strong>ID:</strong>
+			    <span>13486</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-user"></i></span>
+			    <strong>Name:</strong>
+			    <span>Melissa Garcia</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="17px"><use xlink:href="./assets/img/sprite.svg#gender"></use></svg>
+			    </span>
+			    <strong>Gender:</strong>
+			    <span>Female</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="far fa-calendar-alt"></i></span>
+			    <strong>Date of birth:</strong>
+			    <span>03/02/1990</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-envelope"></i></span>
+			    <strong>Email:</strong>
+			    <span>melzep3@gmail.com</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-phone-alt"></i></span>
+			    <strong>Phone:</strong>
+			    <span>2103624510</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="19px"><use xlink:href="./assets/img/sprite.svg#healthcare"></use></svg>
+			    </span>
+			    <strong>Diagnosed:</strong>
+			    <span>Yes</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="14px"><use xlink:href="./assets/img/sprite.svg#medical-guard"></use></svg>
+			    </span>
+			    <strong>Medical Insurance Plan:</strong>
+			    <span>Private insurance plan</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle">
+				<svg width="13px"><use xlink:href="./assets/img/sprite.svg#tooth"></use></svg>
+			    </span>
+			    <strong>Issues and Concerns:</strong>
+			    <span>Lorem Ipsum Dolorsitamet</span>
+			</div>
+		    </div>
+		    <div class="col-lg-5">
+			<p class="font-weight-bold fsz-15">Patient Information:</p>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="far fa-calendar-check"></i></span>
+			    <strong>Date:</strong>
+			    <span>Wednesday, May 20, 2020</span>
+			</div>
+			<div class="info-w-icon mb-3">
+			    <span class="icon-circle"><i class="fas fa-clock"></i></span>
+			    <strong>Duration:</strong>
+			    <span>5:20 pm - 6:20 Pm</span>
+			</div>
+			<hr>
+			<p class="font-weight-bold fsz-15">Patient Notes::</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiselit. Integer in volutpat velit. Phasellus est magna, porttitor vel neque id, lobortis finibus dolor. Sed bibendum vestibulum diam volutpat dictum. Aliqu hendrerit ex id risus mollis, quis pellentesque velit dapibus. Sed ante nisl, posuere id justo in, sollic imperdiet libero. </p>
+		    </div>
+		</div>
+	    </div>
+	    <div class="modal-footer">
+		<div class="">
+		    <a href="#" class="btn btn-sm btn-warning">START CONSULTATION</a>
+		</div>
+		<div class="">
+		    <a href="#" class="btn btn-sm btn-secondary">EDIT</a>
+		    <a href="#" class="btn btn-sm btn-warning">DELETE</a>
+		</div>
+	    </div>
+	</div>
+    </div>
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

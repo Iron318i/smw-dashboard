@@ -1,0 +1,70 @@
+<% var data = {
+title: "Practitioners Management | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Help - Unbounce Leads Generation</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">Help</h2>
+            </div>
+            <div class="card-body pb-5">
+		<p class="mb-1">Visitor lands on Unbounce landing page.</p>
+		<p>Visitor completes all fields of the form and clicks submit.</p>
+		<hr>
+		<div class="heading-icon mb-3">
+		    <svg class="icon text-info">
+		    <use xlink:href="./assets/img/sprite.svg#info"></use>
+		    </svg>
+		    <h3 class="h6 mb-0 font-weight-bold">Path 1 - Vtiger</h3>
+		</div>
+		<div class="pl-3 mb-3">
+		    <ul class="ul fsz-13">
+			<li>Lead goes into Vtiger.</li>
+			<li>Path 1a - Vtiger ads leads to subscription list 1 and sends 1 autoresponder.</li>
+			<li>Path 1b - Vtiger ads lead to subscription list 2 and sends a series of autoresponders starting the day after.</li>
+			<li>If autoresponder email bounces then the lead is removed from both subscription lists.</li>
+		    </ul>
+		</div>
+		<div class="heading-icon mb-3">
+		    <svg class="icon text-info">
+		    <use xlink:href="./assets/img/sprite.svg#info"></use>
+		    </svg>
+		    <h3 class="h6 mb-0 font-weight-bold">Path 2 - Referral Script</h3>
+		</div>
+		<div class="pl-3">
+		    <ul class="ul fsz-13" style="max-width: 730px">
+			<li>Unbounce parses the URL and converts parameters into hidden fields.</li>
+			<li>Lead goes into the Referral script as an email.</li>
+			<li>The script parses the email and collects practitioner name or location information.</li>
+			<li>In case of practitioner name script directly gets its record from database.</li>
+			<li>In case of location information script tried to get practitioner with the help of geocoding techniques.</li>
+			<li>The script then sends the lead information by email to the practitioner according to the parameter in the URL.</li>
+			<li>The script then sends the lead an email with the contact information of the practitioner (according to the parameter in the URL).</li>
+			<li>If the parameter in the URL requires the script to use the postcode / town field information, and this information cannot be processed, then the script will send an email to the lead requesting their postcode.</li>
+			<li>If the practitioner parameter in the URL is incorrect the script will not know which practitioner to send the lead to and will then send the lead an email requesting their post code. (NEEDS TO BE FIXED)</li>
+			<li>* Soon the script will re-send the first email after 24 hours if the first email has not been opened.</li>
+		    </ul>
+		</div>
+		<div class="py-4"></div>
+	    </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

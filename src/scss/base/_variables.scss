@@ -1,0 +1,165 @@
+// Override Bootstrap default variables here
+// Do not edit any of the files in /vendor/bootstrap/scss/!
+
+// Color Variables
+// Bootstrap Color Overrides
+
+$white: #fff !default;
+$gray-100: #f8f9fc !default;
+$gray-200: #e7f2fb;
+$gray-300: #e3e3e3;
+$gray-400: #c5e4f8;
+$gray-500: #cccccc;
+$gray-600: #999999;
+$gray-700: #6c757d;
+$gray-800: #5a5c69 !default;
+$gray-900: #333333 !default;
+$black: #000 !default;
+
+$blue: #0171ab !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #db3333 !default;
+$orange: #ff9c00 ;
+$yellow: #f6c23e !default;
+$green: #29c34d !default;
+$teal: #20c9a6 !default;
+$cyan: #1baadf !default;
+
+$light: $gray-500;
+$warning:  $orange;
+$secondary:     $gray-700;
+
+// Custom Colors
+$brand-google: #ea4335 !default;
+$brand-facebook: #3b5998 !default;
+
+// Set Contrast Threshold
+$yiq-contrasted-threshold: 240;
+
+
+// Components
+$border-radius: rem(3px);
+$border-radius-lg: rem(3px);
+$border-radius-sm: rem(3px);
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $gray-200;
+$body-color: $black;
+
+
+// Typography
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+$font-weight-light: 300 !default;
+// $font-weight-base: 400;
+$headings-font-weight: 400 !default;
+
+$h1-font-size: rem(22px);
+$h2-font-size: rem(19px);
+$h3-font-size: rem(17px);
+$h4-font-size: rem(16px);
+$h5-font-size: rem(15px);
+
+// Forms
+$input-padding-y:rem(8.5px);
+$input-padding-y-sm: rem(6px);
+$input-padding-y-lg: rem(10px);
+
+$input-border-color: $gray-500;
+
+$custom-control-indicator-size: rem(17px);
+$custom-control-indicator-checked-bg: $cyan;
+$custom-control-indicator-bg-size: 80% 80%;
+
+$custom-radio-indicator-icon-checked:  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%231baadf'/%3e%3c/svg%3e");
+
+// Buttons
+$btn-font-weight: 700;
+
+$btn-padding-y: rem(10.5px);
+$btn-padding-x: rem(15px);
+$btn-font-size: rem(12px);
+
+$btn-padding-y-sm: rem(6.5px);
+//$btn-padding-x-sm:            $input-btn-padding-x-sm !default;
+$btn-font-size-sm: rem(12px);
+
+$btn-padding-y-lg: rem(10.5px);
+//$btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+$btn-font-size-lg:  rem(17px);
+
+// Badges
+
+$badge-font-size: rem(12px);
+$badge-padding-y: rem(9px);
+$badge-padding-x: rem(9px);
+
+// Shadows
+$box-shadow-sm: 0 0.125rem 0.25rem 0 rgba($gray-900, .2) !default;
+$box-shadow: 0 0.15rem 1.75rem 0 rgba($gray-900, .15) !default;
+// $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
+
+
+// Borders Radius
+$border-color: darken($gray-200, 2%) !default;
+
+// Spacing Variables
+// Change below variable if the height of the navbar changes
+$topbar-base-height: rem(77px);
+// Change below variable to change the width of the sidenav
+$sidebar-base-width: rem(220px);
+// Change below variable to change the width of the sidenav when collapsed,
+$sidebar-icon-color: #18a4d9;
+$sidebar-collapsed-width: 6.5rem !default;
+
+// Card
+$card-cap-bg: $cyan;
+$card-border-color: $white;
+$card-cap-color: $white;
+
+// Adjust column spacing for symmetry
+$spacer: 1rem !default;
+$grid-gutter-width: $spacer * 1.5 !default;
+
+// Transitions
+$transition-collapse: height .15s ease !default;
+
+// Dropdowns
+$dropdown-font-size: 0.85rem !default;
+$dropdown-border-color: $border-color !default;
+
+//Tables
+$table-cell-padding: 5px 15px;
+$table-border-width: 0;
+$table-accent-bg: #c5e4f8;
+$table-dark-bg: $cyan;
+$table-dark-border-color: $cyan;
+
+// Pagination
+$pagination-padding-x: .9rem;
+$pagination-color: $black;
+$pagination-active-bg: $cyan;
+$pagination-border-color: #e3e3e3;
+
+// Modal
+$modal-lg: 850px;
+
+$close-color: #fff;
+
+// Images
+$thumbnail-padding: 1px;
+$thumbnail-bg: #fff;
+$thumbnail-border-color: #fff;
+$thumbnail-border-radius: 2px;
+
+// Variables
+// --------------------------
+
+$fa-font-path:  "../fonts";

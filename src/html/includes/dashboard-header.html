@@ -1,0 +1,22 @@
+<div class="dashboard-header">
+    <div class="row">
+	<div class="profile-avatar col-auto">
+	    <img class="img-thumbnail" src="./assets/uploads/riz-khawaja.png" alt="Riz Khawaja">
+	    <button type="button" class="btn btn-warning btn-lg">CHANGE PHOTO</button>
+	</div>
+	<div class="profile-data col-auto">
+	    <h3 class="h1">Riz Khawaja</h3>
+	    <p>The Edge Dental</p>
+	</div>
+    </div>
+</div>
+<div class="dashboard-menu">
+    <ul class="nav">
+	<li<% if (title === 'My profile'){%> class="active"<% } %>><a href="./dashboard-my-profile.html">My profile</a></li>
+	<li<% if (title === 'Subscriptions and Licences'){%> class="active"<% } %>><a href="./dashboard-subscriptions-and-licences.html">Subscriptions and licences</a></li>
+	<li<% if (title === 'Billing and Payment'){%> class="active"<% } %>><a href="./dashboard-billing-and-payment.html">Billing and payment</a></li>
+	<li<% if (title === 'My emails and notifications'){%> class="active"<% } %>><a href="./dashboard-my-emails-and-notifications.html">My emails and notifications</a></li>
+	<li><a href="#">Term of use</a></li>
+	<li><a href="#">Logout</a></li>
+    </ul>
+</div>

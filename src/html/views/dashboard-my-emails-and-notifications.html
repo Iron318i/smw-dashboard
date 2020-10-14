@@ -1,0 +1,106 @@
+<% var data = {
+title: "My emails and notifications",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content" class="bg-gray-200">
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+	<!-- Page Heading -->
+	<h1 class="h2 mb-0">My Profile</h1>
+	<%= _.template(require('./../includes/dashboard-header.html').default)(data) %>
+	<div class="card mb-4">
+	    <div class="card-header py-3">
+		<h2 class="h3 m-0">My Emails & Notifications</h2>
+	    </div>
+	    <div class="card-body pb-2">
+		<div class="notification">
+		    <h3 class="title">Instant desktop notifications</h3>
+		    <div class="row">
+			<div class="col-auto">
+			    <p>Receive a new lead desktop notification on your computer when Somnowell screen may not be visible.</p>
+			</div>
+			<div class="col-auto">
+			    <p>Browser notifications enabled.</p>
+			</div>
+		    </div>
+		</div>
+		<div class="notification">
+		    <h3 class="title">New lead notifications</h3>
+		    <div class="row mb-4">
+			<div class="col-auto">
+			    <p>Receive an email as soon as a new lead enters Somnowell.</p>
+			</div>
+			<div class="col-auto actions">
+			    <div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="receiveEmail" checked>
+				<label class="custom-control-label" for="receiveEmail">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		    <div class="row">
+			<div class="col-auto">
+			    <p>Receive an SMS as soon as a new lead enters Somnowell.</p>
+			</div>
+			<div class="col-auto actions">
+			     <div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="receiveSMS">
+				<label class="custom-control-label" for="receiveSMS">&nbsp;</label>
+			    </div>
+			</div>
+		    </div>
+		</div>
+		<div class="notification">
+		    <h3 class="title">Enquiry notifications</h3>
+		    <div class="row">
+			<div class="col-auto">
+			    <p>Preview the email that is sent to an enquirer that acknowledges receipt of their enquiry.</p>
+			</div>
+			<div class="col-auto actions">
+			    <a href="#" class="btn btn-sm btn-warning">View</a>
+			</div>
+		    </div>
+		</div>
+		<div class="notification">
+		    <h3 class="title">Daily summary</h3>
+		    <div class="row">
+			<div class="col-auto">
+			    <p style="max-width: 555px">The Daily summary email provides you with an overview of what needs doing 'today' as well as a summary of the last 24 hours of activity in Somnowell.</p>
+			</div>
+			<div class="col-auto actions">
+			     <div class="custom-control custom-switch mb-3">
+				<input type="checkbox" class="custom-control-input" id="dailySummary" checked>
+				<label class="custom-control-label" for="dailySummary">&nbsp;</label>
+			    </div>
+			     <a href="#" class="btn btn-sm btn-warning">View</a>
+			</div>
+		    </div>
+		</div>
+		<div class="notification">
+		    <h3 class="title">Unassigned lead notifications</h3>
+		    <div class="row">
+			<div class="col-auto">
+			    <p>Receive notifications of leads that need assigning to a practice</p>
+			</div>
+			<div class="col-auto actions">
+			     <div class="custom-control custom-switch mb-3">
+				<input type="checkbox" class="custom-control-input" id="Unassigned" checked>
+				<label class="custom-control-label" for="Unassigned">&nbsp;</label>
+			    </div>
+			     <a href="#" class="btn btn-sm btn-warning">View</a>
+			</div>
+		    </div>
+		</div>
+		<p class="mt-3">
+		    <input type="submit" mame="Submit" value="Save" class="btn btn-warning btn-lg text-uppercase">
+		</p>
+	    </div>
+	</div>
+    </div>
+    <!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>

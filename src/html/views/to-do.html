@@ -1,0 +1,241 @@
+<% var data = {
+title: "Pacients Management | Somnowell",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+<!-- Main Content -->
+<div id="content">
+
+    <!-- Topbar -->
+    <%= _.template(require('./../includes/topbar.html').default)(data) %>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h2 mb-4">Pacients Management</h1>
+
+	<!-- DataTales Example -->
+	<div class="card card-primary mb-4">
+            <div class="card-header py-3">
+		<h2 class="h3 m-0">Todo List</h2>
+            </div>
+            <div class="card-body">
+		<table class="table table-striped table-dataTable" id="dataTable" width="100%" cellspacing="0">
+		    <thead class="thead-dark">
+			<tr>
+			    <th>Action Status</th>
+			    <th>Action</th>
+			    <th>ID</th>
+			    <th>First Name</th>
+			    <th>Last Name</th>
+			    <th>Initial Referral Date</th>
+			    <th class="text-center">Past Call Attempt</th>
+			    <th class="text-center">Past Email Attempt </th>
+			    <th class="no-sort">Click for Actions</th>
+			</tr>
+		    </thead>
+		    <tbody>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button type="button" class="btn btn-warning btn-sm mw-155">Call Script and Memo</button><button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button class="btn btn-warning dropdown-toggle btn-sm mw-155" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click to Send Email</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Action</a>
+				    <a class="dropdown-item" href="#">Another action</a>
+				    <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button type="button" class="btn btn-warning btn-sm mw-155">Call Script and Memo</button><button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button class="btn btn-warning dropdown-toggle btn-sm mw-155" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click to Send Email</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Action</a>
+				    <a class="dropdown-item" href="#">Another action</a>
+				    <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button type="button" class="btn btn-warning btn-sm mw-155">Call Script and Memo</button><button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button class="btn btn-warning dropdown-toggle btn-sm mw-155" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click to Send Email</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Action</a>
+				    <a class="dropdown-item" href="#">Another action</a>
+				    <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button type="button" class="btn btn-warning btn-sm mw-155">Call Script and Memo</button><button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button class="btn btn-warning dropdown-toggle btn-sm mw-155" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click to Send Email</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Action</a>
+				    <a class="dropdown-item" href="#">Another action</a>
+				    <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button type="button" class="btn btn-warning btn-sm mw-155">Call Script and Memo</button><button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button class="btn btn-warning dropdown-toggle btn-sm mw-155" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click to Send Email</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Action</a>
+				    <a class="dropdown-item" href="#">Another action</a>
+				    <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button type="button" class="btn btn-warning btn-sm mw-155">Call Script and Memo</button><button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+			<tr>
+			    <td><span class="text-danger">8 days overdue</span></td>
+			    <td>Call</td>
+			    <td>18524</td>
+			    <td>Trisha</td>
+			    <td>Gentry</td>
+			    <td>Apr 30, 2020, 10:20 pm</td>
+			    <td class="text-center">0</td>
+			    <td class="text-center">0</td>
+			    <td>
+				<button class="btn btn-warning dropdown-toggle btn-sm mw-155" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click to Send Email</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				    <a class="dropdown-item" href="#">Action</a>
+				    <a class="dropdown-item" href="#">Another action</a>
+				    <a class="dropdown-item" href="#">Something else here</a>
+				</div>
+				<button type="button" class="btn btn-secondary btn-sm">Remove from List</button>
+			    </td>
+			</tr>
+		    </tbody>
+		</table>
+            </div>
+	</div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- End of Main Content -->
+<%= _.template(require('./../includes/footer.html').default)(data) %>
